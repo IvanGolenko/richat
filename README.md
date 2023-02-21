@@ -28,6 +28,7 @@ python manage.py runserver
 ### Технологии
 - Python 3.9.0
 - Django 2.2.19
+- Stripe= 5.2.0
 
 ### Автор
 Иван Голенко
