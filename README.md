@@ -14,8 +14,8 @@ Django-проект: реализован простой сервер с одн�
 - Заполните файл .env, указав переменные окружения:
 ```
 SECRET_KEY
-stripe.api_key
-stripe_public_key
+stripe.api_key (https://dashboard.stripe.com/test/apikeys)
+stripe_public_key (https://dashboard.stripe.com/test/apikeys)
 ```
 - Установите и активируйте виртуальное окружение:
 ```
