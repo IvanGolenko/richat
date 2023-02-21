@@ -29,6 +29,7 @@ python manage.py runserver
 - Python 3.9.0
 - Django 2.2.19
 - Stripe= 5.2.0
+- Python-dotenv
 
 ### Автор
 Иван Голенко
