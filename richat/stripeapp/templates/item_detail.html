@@ -1,4 +1,5 @@
 {% load custom_tags %}
+
 <html>
   <head>
     <title>{{ item.name }}</title>
@@ -10,7 +11,7 @@
   <form action="/buy/{{ item.id }}/" method="get">
       <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="pk_test_51McmizAxLmqwbgjKXrhGmE2gqeM1A4IJIevIlQu10Ofkz4yQT0QbcFCbtHHrjQynyNQmWllT9oW7hxqmDumRL2jj00aWysSJI9"
+          data-key="{{ stripe_public_key }}"
           data-amount="{{ item.price|multiply_by_100 }}"
           data-name="{{ item.name }}"
           data-description="{{ item.description }}"

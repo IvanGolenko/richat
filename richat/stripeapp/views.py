@@ -34,6 +34,7 @@ def buy_item(request, id):
 # View для отображения информации о товаре
 def item_detail(request, id):
     item = Item.objects.get(id=id)
-    context = {"item": item}
+    stripe_public_key = os.getenv('stripe_public_key')
+    context = {'item': item, 'stripe_public_key': stripe_public_key}
     return render(request, "item_detail.html", context)
 
